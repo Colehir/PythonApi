@@ -3,4 +3,4 @@ import json
 
 @app.route('/', methods=['GET'])
 def getSnake():
-    return "Hello"
+    return json.dump({ x: 1 })
