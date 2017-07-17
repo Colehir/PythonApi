@@ -13,4 +13,5 @@ def getHelp():
     return json.dumps({ "x": 1 })
 
 if __name__ == "__main__":
+    print("starting")
     app.run()
