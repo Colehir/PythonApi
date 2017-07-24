@@ -35,8 +35,7 @@ def updateSnake():
 
 @app.route('/food', methods=['POST'])
 def updateFood():
-    newFood = request.json['food']
-    snake.food = newFood
+    snake.food = request.json['food']
     return '', 200
 
 port = os.getenv('PORT', '5000')
